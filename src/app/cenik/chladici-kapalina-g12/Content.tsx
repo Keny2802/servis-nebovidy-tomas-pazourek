@@ -37,6 +37,9 @@ const Content = () => {
                     alt={currentPage?.alt}
                     className="mt-2.5 md:mt-3 lg:mt-4"
                     />
+                    <Text>
+                        {currentPage?.bodyText}
+                    </Text>
                 </Flex>
             </Wrapper>
             <Contact />
