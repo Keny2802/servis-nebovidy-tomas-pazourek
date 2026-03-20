@@ -8,6 +8,8 @@ import {
 } from "next/font/google";
 import "./globals.css";
 
+import News from "./components/News";
+
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -49,6 +51,7 @@ export default function RootLayout({
         className={`${fontKanit} antialiased`}
       >
         {children}
+        <News />
       </body>
     </html>
   );

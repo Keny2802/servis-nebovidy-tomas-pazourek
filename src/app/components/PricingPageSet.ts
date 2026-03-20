@@ -14,6 +14,27 @@ const PricingPageSet = [
         alt: "Služba elektroinstalační práce - Servis Nebovidy Tomáš Pazourek"
     },
     {
+        url: "/cenik/klimatizace",
+        heading: "Klimatizace",
+        bodyText: "Provádím službu klimatizace.",
+        src: "/air-condition.avif",
+        alt: "Služba klimatizace - Servis Nebovidy Tomáš Pazourek"
+    },
+    {
+        url: "/cenik/pneuservis",
+        heading: "Pneuservis",
+        bodyText: "Provádím službu pneuservisu.",
+        src: "/air-condition.avif",
+        alt: "Služba klimatizace - Servis Nebovidy Tomáš Pazourek"
+    },
+    {
+        url: "/cenik/elektroinstalacni-prace",
+        heading: "Elektroinstalační práce",
+        bodyText: "Provádím diagnostiky a opravy závad v elektroinstalaci klasických vozů se spalovacími motory, po domluvě také na elektrovozidlech. ",
+        src: "/electrician-work.avif",
+        alt: "Služba elektroinstalační práce - Servis Nebovidy Tomáš Pazourek"
+    },
+    {
         url: "/cenik/vymena-brzdove-a-spojkove-kapaliny",
         heading: "Výměna brzdové a spojkové kapaliny",
         bodyText: "Výměna brzdové a spojkové kapaliny",

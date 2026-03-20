@@ -39,6 +39,24 @@ const Pricing = () => {
                                     vatText: "Uvedené ceny jsou bez DPH."
                                 },
                                 {
+                                    href: "/cenik/klimatizace",
+                                    src: "/air-condition.avif",
+                                    alt: "Klimatizace - Servis Nebovidy Tomáš Pazourek",
+                                    heading: "Klimatizace",
+                                    subheading: "Pro více informací u technika.",
+                                    price: "0 Kč / hodinová sazba",
+                                    vatText: "Uvedené ceny jsou bez DPH."
+                                },
+                                {
+                                    href: "/cenik/pneuservis",
+                                    src: "/pneuservis.avif",
+                                    alt: "Pneuservis - Servis Nebovidy Tomáš Pazourek",
+                                    heading: "Pneuservis",
+                                    subheading: "Neplatí při dodání vlastního materiálu.",
+                                    price: "0 Kč / hodinová sazba",
+                                    vatText: "Uvedené ceny jsou bez DPH."
+                                },
+                                {
                                     href: "/cenik/vymena-brzdove-a-spojkove-kapaliny",
                                     src: "/brake-and-clutch-fluid-replacement.avif",
                                     alt: "Výměna brzdové a spojkové kapaliny - Servis Nebovidy Tomáš Pazourek",
