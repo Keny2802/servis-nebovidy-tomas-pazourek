@@ -6,9 +6,9 @@ import {
     Fragment
 } from "react";
 import {
-    BiX,
-    BiChevronRight
+    BiX
 } from "react-icons/bi";
+import Link from "next/link";
 import clsx from "clsx";
 
 import Wrapper from "./Wrapper";
@@ -33,31 +33,6 @@ const News = ({
     ] = useState<boolean>(false);
 
     const DURATION = 10000;
-
-    // useEffect(() => {
-    //     // resizing a změna pozice tlačítka
-    //     const scrolling = () => {
-    //         if (window.scrollY > 0) {
-    //             setToDisplay(true);
-    //         } else {
-    //             // setToScrolling(false);
-    //             setToDisplay(false);
-    //         };
-    //     };
-
-    //     const timeout = setTimeout(() => {
-    //         if (!display) {
-    //             setToDisplay(true);
-    //         };
-    //     }, DURATION);
-
-    //     window.addEventListener("scroll", scrolling);
-
-    //     return () => {
-    //         window.removeEventListener("scroll", scrolling);
-    //         clearTimeout(timeout);
-    //     };
-    // }, []);
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -91,7 +66,7 @@ const News = ({
                         [
                             {
                                 heading: "Nákup Geometrie",
-                                bodyText: "V roce 2023 jsme dostali dotaci na nákup Geometrie."
+                                bodyText: "V roce 2025 získal dotaci na nákup Geometrie."
                             }
                         ].map((newThing, idx) => {
                             const {
@@ -107,6 +82,12 @@ const News = ({
                                         <Text>
                                             {bodyText}
                                         </Text>
+                                        <Link
+                                        href="/servis-nebovidy-tomas-pazourek-tiskova-zprava.docx"
+                                        download="Servis Nebovidy Tomáš Pazourek tisková zpráva.docx"
+                                        className="border-b-2 border-[#fb0404] w-max">
+                                            Stáhnout tiskovou zprávu
+                                        </Link>
                                     </Flex>
                                 </Fragment>
                             );

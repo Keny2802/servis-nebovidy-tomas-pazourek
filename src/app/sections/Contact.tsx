@@ -1,6 +1,7 @@
 import {
     Fragment
 } from "react";
+import clsx from "clsx";
 import Link from "next/link";
 
 import Wrapper from "../components/Wrapper";
@@ -8,10 +9,19 @@ import Text from "../components/Text";
 import Button from "../components/Button";
 import Img from "../components/Img";
 
-const Contact = () => {
+const Contact = ({
+    className,
+    id,
+} : {
+    className?: string
+    id?: string;
+}) => {
     return (
         <Fragment>
-            <Wrapper className="border-b border-[#6a6a6a]" />
+            <Wrapper
+            className={clsx(className, "border-b border-[#6a6a6a] contact-section-component")}
+            id={id}
+            />
             <Wrapper className="bg-[#cdcdcd] p-4 md:p-5 lg:p-6">
                 <Wrapper className="flex justify-center flex-col gap-2 md:gap-3 lg:gap-4 text-center bg-[#282828] text-white rounded-3xl p-3 md:p-4 lg:p-4.5">
                     <Text

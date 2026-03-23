@@ -9,13 +9,17 @@ import Text from "../components/Text";
 import Cta from "../components/Cta";
 
 const Hero = ({
-    className
+    className,
+    id
 } : {
-    className?: string
+    className?: string;
+    id?: string;
 }) => {
     return (
         <Fragment>
-            <Wrapper className={clsx(className, "relative min-h-screen bg-[#cdcdcd] text-white")}>
+            <Wrapper
+            className={clsx(className, "relative min-h-screen bg-[#cdcdcd] text-white")}
+            id={id}>
                 <Img
                 fill={true}
                 type="hero"
@@ -42,17 +46,17 @@ const Hero = ({
                         vozy
                     </Text>
                     <Text type="bodyText">
-                        Přijeďte nás poctít Vaší návštěvou! Sídlíme na adrese 247, Nebovidy 247, 664 48 Nebovidy.
+                        Přijeďte nás poctít Vaší návštěvou! Sídlím na adrese Nebovidy 247, 664 48 Nebovidy u Brna.
                     </Text>
                     <Wrapper className="mt-2 md:mt-3 lg:mt-4 flex justify-center items-center flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8">
                         {
                             [
                                 {
-                                    href: "/sluzby",
-                                    text: "Naše služby"
+                                    href: "#kontakt",
+                                    text: "Kontaktujte mě"
                                 },
                                 {
-                                    href: "/cenik",
+                                    href: "#cenik",
                                     text: "Zjistit cenu"
                                 }
                             ].map((link, idx) => {

@@ -1,9 +1,13 @@
+"use client";
+
 import {
     ReactNode,
     Fragment
 } from "react";
 import Link from "next/link";
 import clsx from "clsx";
+
+import Hashless from "./Hashless";
 
 type props = {
     type?: "primary" | "secondary";
@@ -38,7 +42,8 @@ const Cta = ({
             className={clsx(
             className,
             `${types[type]} ${sizes[size]} cta-component`
-            )}>
+            )}
+            onClick={(e) => Hashless(e, href)}>
                 {children}
             </Link>
         </Fragment>

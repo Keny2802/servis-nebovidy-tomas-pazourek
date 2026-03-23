@@ -20,9 +20,11 @@ import Icon from "./Icon";
 import MobileMenu from "./MobileMenu";
 
 const Header = ({
-    className
+    className,
+    id,
 } : {
     className?: string
+    id?: string;
 }) => {
     const [displayMenu, setToDisplayMenu] = useState<boolean>(false);
     const [isScrolledHeader, setToScrolledHeader] = useState<boolean>(false);
@@ -50,7 +52,8 @@ const Header = ({
                 displayMenu ? "z-20" : "z-50",
                 isScrolledHeader ? "fixed" : "static",
                 `w-full p-4 bg-[#282828] text-white flex justify-between items-center gap-4 md:gap-6 lg:gap-8`
-                )}>
+                )}
+                id={id}>
                 <Logo />
                 <List className="hidden lg:flex justify-center items-center gap-8 md:gap-10 lg:gap-16 text-base md:text-[17px] lg:text-[17.5px]">
                     {
@@ -59,16 +62,16 @@ const Header = ({
                                 href: "#uvod",
                                 text: "Úvod"
                             },
+                            // {
+                            //     href: "/sluzby",
+                            //     text: "Služby"
+                            // },
                             {
-                                href: "/sluzby",
-                                text: "Služby"
-                            },
-                            {
-                                href: "/cenik",
+                                href: "#cenik",
                                 text: "Ceník"
                             },
                             {
-                                href: "/kontakt",
+                                href: "#kontakt",
                                 text: "Kontakt"
                             }
                         ].map((link, idx) => {

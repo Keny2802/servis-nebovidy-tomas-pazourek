@@ -1,16 +1,25 @@
 import {
     Fragment
 } from "react";
+import clsx from "clsx";
 import Link from "next/link";
 
 import Wrapper from "../components/Wrapper";
 import Img from "../components/Img";
 import Text from "../components/Text";
 
-const Pricing = () => {
+const Pricing = ({
+    className,
+    id,
+} : {
+    className?: string
+    id?: string;
+}) => {
     return (
         <Fragment>
-            <Wrapper className="bg-[#cdcdcd] p-4 md:p-5 lg:p-6">
+            <Wrapper
+            className={clsx(className, "bg-[#cdcdcd] p-4 md:p-5 lg:p-6 pricing-section-component")}
+            id={id}>
                 <Wrapper className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 flex-col text-center bg-[#282828] text-white rounded-3xl p-3 md:p-4 lg:p-4.5">
                     <Text
                     type="sectionHeading"
@@ -20,6 +29,15 @@ const Pricing = () => {
                     <Wrapper className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mt-2 md:mt-3 lg:mt-4">
                         {
                             [
+                                {
+                                    href: "/cenik/3d-geometrie-kol-ravaglioli",
+                                    src: "/3d-geometrie-kol-ravaglioli.avif",
+                                    alt: "3d geometrie kol Ravaglioli - Servis Nebovidy Tomáš Pazourek",
+                                    heading: "Seřízení geometrie kol",
+                                    subheading: "Pokud má vůz stavitelné odklony nebo jde o sportovně upravený vůz, je cena vždy na dotaz po prohlídce vozu.",
+                                    price: "1.400 Kč",
+                                    vatText: "Uvedené ceny jsou bez DPH."
+                                },
                                 {
                                     href: "/cenik/mechanicke-prace",
                                     src: "/mechanic-work.avif",
@@ -44,16 +62,15 @@ const Pricing = () => {
                                     alt: "Klimatizace - Servis Nebovidy Tomáš Pazourek",
                                     heading: "Klimatizace",
                                     subheading: "Pro více informací u technika.",
-                                    price: "0 Kč / hodinová sazba",
+                                    price: "Od 2.090 Kč",
                                     vatText: "Uvedené ceny jsou bez DPH."
                                 },
                                 {
                                     href: "/cenik/pneuservis",
                                     src: "/pneuservis.avif",
                                     alt: "Pneuservis - Servis Nebovidy Tomáš Pazourek",
-                                    heading: "Pneuservis",
-                                    subheading: "Neplatí při dodání vlastního materiálu.",
-                                    price: "0 Kč / hodinová sazba",
+                                    heading: "Přezutí kol",
+                                    price: "Od 500 Kč",
                                     vatText: "Uvedené ceny jsou bez DPH."
                                 },
                                 {
@@ -107,11 +124,9 @@ const Pricing = () => {
                                                 alt={card.alt}
                                                 className="max-h-[350px] md:max-w-[500px] md:min-h-[490px] md:max-h-[500px] rounded-md object-cover"
                                                 />
-                                                <Wrapper className="absolute inset-0 bg-black/30 w-full h-full rounded-md" />
-                                                    <Wrapper className="absolute bottom-5 left-5 flex flex-col items-start gap-1.5">
-                                                        <Text
-                                                        type="cardHeading"
-                                                        className="text-start">
+                                                <Wrapper className="absolute inset-0 bg-black/40 w-full h-full rounded-md" />
+                                                    <Wrapper className="p-2.5 absolute bottom-5 left-5 flex justify-start items-start flex-col gap-1.5 text-start">
+                                                        <Text type="cardHeading">
                                                             {card.heading}
                                                         </Text>
                                                         <Text type="bodyText">

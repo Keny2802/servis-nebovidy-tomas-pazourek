@@ -1,8 +1,15 @@
 const PricingPageSet = [
     {
+        url: "/cenik/3d-geometrie-kol-ravaglioli",
+        heading: "Seřízení geometrie kol",
+        bodyText: "Nabízím seřízení geometrie kol pomocí 3D technologie od renomovaného Italského výrobce Ravaglioli. Cena zahrnuje seřízení sbíhavosti zadní nápravy (pokud je seřiditelná) a seřízení přední sbíhavosti. Pokud má vůz stavitelné odklony nebo jde o sportovně upravený vůz, je cena vždy na dotaz po prohlídce vozu. Cena platí v případě, že všechny seřizovací prvky jsou funkční, pokud jsou šrouby přirezlé je potřeba nejprve odstranit tuto závadu a poté lze teprve správně seřídit geometrii vozidla.",
+        src: "/3d-geometrie-kol-ravaglioli.avif",
+        alt: "3d geometrie kol Ravaglioli - Servis Nebovidy Tomáš Pazourek",
+    },
+    {
         url: "/cenik/mechanicke-prace",
         heading: "Mechanické práce",
-        bodyText: "Hodinová sazba platí za každou započatou hodinu. Přesnější určení ceny je vždy až po prohlídce vozu. Na základě zjištěného stavu je vytvořena cenová nabídka s uvedením hodinové sazby a potřebného materiálu. Při dodání vlastního materiálu bude hodinová sazba navýšena na dvojnásobek. ",
+        bodyText: "Hodinová sazba platí za každou započatou hodinu. Přesnější určení ceny je vždy až po prohlídce vozu. Na základě zjištěného stavu je vytvořena cenová nabídka s uvedením hodinové sazby a potřebného materiálu. Při dodání vlastního materiálu bude hodinová sazba navýšena na dvojnásobek.",
         src: "/mechanic-work.avif",
         alt: "Služba mechanické práce - Servis Nebovidy Tomáš Pazourek"
     },

@@ -9,6 +9,8 @@ import Wrapper from "./Wrapper";
 import Logo from "./Logo";
 import Flex from "./Flex";
 import Text from "./Text";
+import HeaderItem from "./HeaderItem";
+import HeaderLink from "./HeaderLink";
 
 type props = {
     className?: string;
@@ -52,24 +54,23 @@ const MobileMenu = ({
                                                 text: "Úvod"
                                             },
                                             {
-                                                href: "/sluzby",
-                                                text: "Služby"
-                                            },
-                                            {
-                                                href: "/cenik",
+                                                href: "#cenik",
                                                 text: "Ceník"
                                             },
                                             {
-                                                href: "/kontakt",
+                                                href: "#kontakt",
                                                 text: "Kontakt"
                                             }
                                         ].map((link, idx) => {
                                             return (
-                                                <Link
+                                                <HeaderItem
                                                 key={idx}
-                                                href={link.href}>
-                                                    {link.text}
-                                                </Link>
+                                                className="">
+                                                    <HeaderLink
+                                                    href={link.href}>
+                                                        {link.text}
+                                                    </HeaderLink>
+                                                </HeaderItem>
                                             );
                                         })
                                     }

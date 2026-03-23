@@ -1,15 +1,28 @@
+"use client";
+
 import {
     Fragment
 } from "react";
-import Link from "next/link";
 
 import Wrapper from "../components/Wrapper";
 import Text from "../components/Text";
+import clsx from "clsx";
+import HeaderLink from "../components/HeaderLink";
+import HeaderItem from "../components/HeaderItem";
 
-const Footer = () => {
+const Footer = ({
+    className,
+    id,
+} : {
+    className?: string
+    id?: string;
+}) => {
     return (
         <Fragment>
-            <Wrapper className="p-2.5 md:p-3 lg:p-4 bg-[#282828] text-white">
+            <Wrapper
+            className={clsx(className, "p-2.5 md:p-3 lg:p-4 bg-[#282828] text-white footer-component")}
+            id={id}
+            >
                 <Wrapper className="flex flex-col lg:flex-row gap-4 md:gap-8 lg:gap-12">
                     <Wrapper className="flex flex-col gap-1">
                         <Text type="boldText">
@@ -22,24 +35,24 @@ const Footer = () => {
                                     text: "Úvod"
                                 },
                                 {
-                                    href: "/sluzby",
-                                    text: "Služby"
-                                },
-                                {
-                                    href: "/cenik",
+                                    href: "#cenik",
                                     text: "Ceník"
                                 },
                                 {
-                                    href: "/kontakt",
+                                    href: "#kontakt",
                                     text: "Kontakt"
                                 }
                             ].map((link, idx) => {
                                 return (
-                                    <Link
+                                    <HeaderItem
                                     key={idx}
-                                    href={link.href}>
-                                        {link.text}
-                                    </Link>
+                                    className="list-none">
+                                        <HeaderLink
+                                        key={idx}
+                                        href={link.href}>
+                                            {link.text}
+                                        </HeaderLink>
+                                    </HeaderItem>
                                 );
                             })
                         }
@@ -64,11 +77,15 @@ const Footer = () => {
                                 }
                             ].map((link, idx) => {
                                 return (
-                                    <Link
+                                    <HeaderItem
                                     key={idx}
-                                    href={link.href}>
-                                        {link.text}
-                                    </Link>
+                                    className="list-none">
+                                        <HeaderLink
+                                        key={idx}
+                                        href={link.href}>
+                                            {link.text}
+                                        </HeaderLink>
+                                    </HeaderItem>
                                 );
                             })
                         }

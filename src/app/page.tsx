@@ -11,11 +11,11 @@ import Footer from "./sections/Footer";
 const Page = () => {
   return (
       <Fragment>
-          <Header />
-          <Hero />
-          <Pricing />
-          <Contact />
-          <Footer />
+          <Header id="navigace" />
+          <Hero id="uvod" />
+          <Pricing id="cenik" />
+          <Contact id="kontakt" />
+          <Footer id="footer" />
       </Fragment>
   );
 };
