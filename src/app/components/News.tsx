@@ -15,6 +15,7 @@ import Wrapper from "./Wrapper";
 import Icon from "./Icon";
 import Flex from "./Flex";
 import Text from "./Text";
+import Img from "./Img";
 
 type props = {
     className?: string;
@@ -46,7 +47,7 @@ const News = ({
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, display ? "opacity-100" : "opacity-0", "min-w-[200px] max-w-[250px] fixed bottom-5 left-8 p-2.5 md:p-3 lg:p-4 bg-white text-black rounded-md news-component")}>
+            <Wrapper className={clsx(className, display ? "opacity-100" : "opacity-0", "min-w-[200px] max-w-[250px] fixed top-5 bottom-5 left-8 z-50 p-2.5 md:p-3 lg:p-4 bg-white text-black border border-gray-300 rounded-md news-component")}>
                 <Flex
                 type="flexRowOnly"
                 className="justify-end">
@@ -66,7 +67,7 @@ const News = ({
                         [
                             {
                                 heading: "Nákup Geometrie",
-                                bodyText: "V roce 2025 získal dotaci na nákup Geometrie."
+                                bodyText: "V roce 2025 jsem získal dotaci na nákup Geometrie."
                             }
                         ].map((newThing, idx) => {
                             const {
@@ -83,16 +84,30 @@ const News = ({
                                             {bodyText}
                                         </Text>
                                         <Link
-                                        href="/servis-nebovidy-tomas-pazourek-tiskova-zprava.docx"
-                                        download="Servis Nebovidy Tomáš Pazourek tisková zpráva.docx"
+                                        href="https://drive.google.com/file/d/1cIAgTVRGJVYSmxkwVtPYhz5e6ydXbliK/view?usp=sharing"
+                                        rel="nofollow"
+                                        // download="Servis Nebovidy Tomáš Pazourek tisková zpráva.docx"
+                                        target="_blank"
                                         className="border-b-2 border-[#fb0404] w-max">
-                                            Stáhnout tiskovou zprávu
+                                            Náhlednout k tiskové zprávě
                                         </Link>
                                     </Flex>
                                 </Fragment>
                             );
                         })
                     }
+                    <Link
+                    href="https://www.zkontrolujsiauto.cz/?a_box=mczcp4qa"
+                    target="_blank"
+                    rel="sponsored">
+                        <Img
+                        width={150}
+                        height={150}
+                        src="/cebia.png"
+                        alt="Cebia prověřte si auto ještě před koupí vozu."
+                        className="w-full max-h-[180px]"
+                        />
+                    </Link>
                 </Flex>
             </Wrapper>
         </Fragment>

@@ -8,13 +8,13 @@ import {
 } from "next/navigation";
 import PricingPageSet from "@/app/components/PricingPageSet";
 
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import Wrapper from "@/app/components/Wrapper";
 import Flex from "@/app/components/Flex";
 import Text from "@/app/components/Text";
 import Img from "@/app/components/Img";
-import Contact from "../sections/Contact";
-import Footer from "../sections/Footer";
+import Contact from "../../sections/Contact";
+import Footer from "../../sections/Footer";
 
 const Content = () => {
     const pathname = usePathname();
@@ -26,7 +26,7 @@ const Content = () => {
             <Wrapper className="p-4 md:p-5 lg:p-6 bg-white shadow-lg">
                 <Flex
                 type="flexCol"
-                className="justify-center items-center text-center">
+                className="justify-center items-center">
                     <Text type="heroHeading">
                         {currentPage?.heading}
                     </Text>
@@ -37,9 +37,28 @@ const Content = () => {
                     alt={currentPage?.alt}
                     className="mt-2.5 md:mt-3 lg:mt-4"
                     />
-                    <Text>
-                        {currentPage?.bodyText}
-                    </Text>
+                    <Flex type="flexCol">
+                        {
+                            Array.from(currentPage?.points ?? "").map(((text, idx) => {
+                                return (
+                                    <li key={idx}>
+                                        {text}
+                                    </li>
+                                );
+                            }))
+                        }
+                    </Flex>
+                    <Flex type="flexCol">
+                        {
+                            Array.from(currentPage?.bodyText ?? "").map(((text, idx) => {
+                                return (
+                                    <Text key={idx}>
+                                        {text}
+                                    </Text>
+                                );
+                            }))
+                        }
+                    </Flex>
                 </Flex>
             </Wrapper>
             <Contact />

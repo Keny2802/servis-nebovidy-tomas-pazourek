@@ -149,7 +149,8 @@ const Pricing = ({
                     <Text
                     type="bodyText"
                     className="my-2 md:my-4 lg:my-6">
-                        Potřebujete vědět více informací nebo máte jakýkoliv dotaz? Napište nebo zavolejte nám.
+                        {/* Potřebujete vědět více informací nebo máte jakýkoliv dotaz? Napište nebo zavolejte nám. */}
+                        Dne 10.08.2023 jsem úspěšně absolvoval závěrečnou zkoušku a získal jsem tak profesní kvalifikaci: Mechanik silničních vozidel s elektrickým a hybridním pohonem. Rozšířil jsem tak svoji kvalifikaci o obor autotronik. Od roku 2023 také spolupracuji s firmou elBlesk.
                     </Text>
                 </Wrapper>
             </Wrapper>

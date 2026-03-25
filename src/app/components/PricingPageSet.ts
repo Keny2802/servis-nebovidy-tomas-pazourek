@@ -23,16 +23,37 @@ const PricingPageSet = [
     {
         url: "/cenik/klimatizace",
         heading: "Klimatizace",
-        bodyText: "Provádím službu klimatizace.",
+        points: [
+            "Chladivo R134A - 1g = 3,-/3,63,-",
+            "Výměna chladiva + oleje kompresoru + UV barvivo do systému - 590,-/714,-",
+            "Kontrola těsnosti tlakovou zkouškou + zjištění úniků - 700,-/847,-",
+            "Dezinfekce kabiny pomocí spreje - 400,-/484,- (doporučena výměna pylového filtru).",
+            "Dezinfekce kabiny pomocí ozónu - 500,-/605,- (doporučena výměna pylového filtru)."
+        ],
         src: "/air-condition.avif",
         alt: "Služba klimatizace - Servis Nebovidy Tomáš Pazourek"
     },
     {
         url: "/cenik/pneuservis",
         heading: "Pneuservis",
-        bodyText: "Provádím službu pneuservisu.",
+        points: [
+            "Přezutí sada za sadu (obuté disky) - 500,-/605,-",
+            "Přezutí pneu/ocelový disk  - 650,-/787,-",
+            "Přezutí pneu/ALU disk do 17″ - 800,-/968,-",
+            "Přezutí pneu/ALU disk 18″ a 19″ - 950,-/1137,-",
+            `Přezutí pneu nízkoprofilové/ALU disk 18" a 19"  větší 1150,-/1392,-`,
+            `Přezutí pneu/ALU disk 20″ a větší  - 1350,-/1634,-`,
+            "Přezutí dodávek (cargo) - 1300,-/1573,-",
+            "Přezutí RUN Flat pneu - 1400,-/1694,-",
+            "Oprava defektu - 350,-/424,-",
+            "Uskladnění kol - 500,-/605,-/sezóna"
+        ],
+        bodyText: [
+            "Seřízení geometrie kol (3D geometrie) - 1400,-/1694,- základní seřízení přední příp. i zadní nápravy (platí v případě pohyblivých seřizovacích prvků - pokud nelze některý prvek povolit nebo rozhýbat pro nastavení je prvně nutné odstranit závadu a teprve poté je možné seřízení).",
+            "V případě sportovních/snížených nebo upravených vozidel, bude cena individuálně sdělena před seřízením."
+        ],
         src: "/air-condition.avif",
-        alt: "Služba klimatizace - Servis Nebovidy Tomáš Pazourek"
+        alt: "Služba pneuservis - Servis Nebovidy Tomáš Pazourek"
     },
     {
         url: "/cenik/elektroinstalacni-prace",
