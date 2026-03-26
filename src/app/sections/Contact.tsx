@@ -161,12 +161,13 @@ const Contact = ({
                                             [
                                                 { text: "Tomáš Pazourek" },
                                                 { text: "Japanese Cars" },
-                                                { text: "247, Nebovidy 247, 664 48 Nebovidy." }
+                                                { text: "Nebovidy 247, 664 48 Nebovidy u Brna." }
                                             ].map((info, idx) => {
                                                 return (
                                                     <Text
                                                     key={idx}
-                                                    type="bodyText">
+                                                    type="bodyText"
+                                                    className="text-start">
                                                         {info.text}
                                                     </Text>
                                                 );

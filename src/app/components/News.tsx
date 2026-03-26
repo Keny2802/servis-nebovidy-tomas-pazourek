@@ -47,7 +47,7 @@ const News = ({
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, display ? "opacity-100" : "opacity-0", "min-w-[200px] max-w-[250px] fixed top-5 bottom-5 left-8 z-50 p-2.5 md:p-3 lg:p-4 bg-white text-black border border-gray-300 rounded-md news-component")}>
+            <Wrapper className={clsx(className, display ? "inline-block" : "hidden", "min-w-[200px] max-w-[250px] max-h-max fixed bottom-5 left-8 z-50 p-2.5 md:p-3 lg:p-4 bg-white text-black border border-gray-300 rounded-md news-component")}>
                 <Flex
                 type="flexRowOnly"
                 className="justify-end">
@@ -105,7 +105,7 @@ const News = ({
                         height={150}
                         src="/cebia.png"
                         alt="Cebia prověřte si auto ještě před koupí vozu."
-                        className="w-full max-h-[180px]"
+                        className="w-full max-h-max object-cover"
                         />
                     </Link>
                 </Flex>

@@ -59,7 +59,7 @@ const Header = ({
                     {
                         [
                             {
-                                href: "#uvod",
+                                href: "/#uvod",
                                 text: "Úvod"
                             },
                             // {
@@ -67,11 +67,11 @@ const Header = ({
                             //     text: "Služby"
                             // },
                             {
-                                href: "#cenik",
+                                href: "/#cenik",
                                 text: "Ceník"
                             },
                             {
-                                href: "#kontakt",
+                                href: "/#kontakt",
                                 text: "Kontakt"
                             }
                         ].map((link, idx) => {
@@ -79,7 +79,7 @@ const Header = ({
                                 <HeaderItem key={idx}>
                                     <HeaderLink
                                     href={link.href}>
-                                        {link.text}
+                                       {link.text}
                                     </HeaderLink>
                                 </HeaderItem>
                             );
@@ -87,7 +87,7 @@ const Header = ({
                     }
                 </List>
                 <HeaderLink
-                href="#kontakt"
+                href="/#kontakt"
                 className="hidden md:inline-block p-4 md:p-6 max-w-[180px] md:max-w-[200px] text-center rounded-full cursor-pointer bg-[#fb0404] text-base md:text-[17px] lg:text-[17.5px]">
                     Kde nás najdete
                 </HeaderLink>

@@ -41,17 +41,17 @@ const PricingPageSet = [
             "Přezutí pneu/ocelový disk  - 650,-/787,-",
             "Přezutí pneu/ALU disk do 17″ - 800,-/968,-",
             "Přezutí pneu/ALU disk 18″ a 19″ - 950,-/1137,-",
-            `Přezutí pneu nízkoprofilové/ALU disk 18" a 19"  větší 1150,-/1392,-`,
+            // `Přezutí pneu nízkoprofilové/ALU disk 18" a 19"  větší 1150,-/1392,-`,
             `Přezutí pneu/ALU disk 20″ a větší  - 1350,-/1634,-`,
             "Přezutí dodávek (cargo) - 1300,-/1573,-",
             "Přezutí RUN Flat pneu - 1400,-/1694,-",
             "Oprava defektu - 350,-/424,-",
             "Uskladnění kol - 500,-/605,-/sezóna"
         ],
-        bodyText: [
-            "Seřízení geometrie kol (3D geometrie) - 1400,-/1694,- základní seřízení přední příp. i zadní nápravy (platí v případě pohyblivých seřizovacích prvků - pokud nelze některý prvek povolit nebo rozhýbat pro nastavení je prvně nutné odstranit závadu a teprve poté je možné seřízení).",
-            "V případě sportovních/snížených nebo upravených vozidel, bude cena individuálně sdělena před seřízením."
-        ],
+        // bodyText: [
+        //     "Seřízení geometrie kol (3D geometrie) - 1400,-/1694,- základní seřízení přední příp. i zadní nápravy (platí v případě pohyblivých seřizovacích prvků - pokud nelze některý prvek povolit nebo rozhýbat pro nastavení je prvně nutné odstranit závadu a teprve poté je možné seřízení).",
+        //     "V případě sportovních/snížených nebo upravených vozidel, bude cena individuálně sdělena před seřízením."
+        // ],
         src: "/air-condition.avif",
         alt: "Služba pneuservis - Servis Nebovidy Tomáš Pazourek"
     },
@@ -65,9 +65,12 @@ const PricingPageSet = [
     {
         url: "/cenik/vymena-brzdove-a-spojkove-kapaliny",
         heading: "Výměna brzdové a spojkové kapaliny",
-        bodyText: "Výměna brzdové a spojkové kapaliny",
         src: "/brake-and-clutch-fluid-replacement.avif",
-        alt: "Služba výměna brzdové a spojkové kapaliny - Servis Nebovidy Tomáš Pazourek"
+        alt: "Služba výměna brzdové a spojkové kapaliny - Servis Nebovidy Tomáš Pazourek",
+        bodyText: [
+            "Cena zahrnuje 1 litr brzdové kapaliny DOT4, ostatní na dotaz.",
+            "Výměna brzdové kapaliny je doporučena každé 3 roky."
+        ]
     },
     {
         url: "/cenik/chladici-kapalina-g11",

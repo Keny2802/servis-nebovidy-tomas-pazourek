@@ -50,15 +50,15 @@ const MobileMenu = ({
                                     {
                                         [
                                             {
-                                                href: "#uvod",
+                                                href: "/#uvod",
                                                 text: "Úvod"
                                             },
                                             {
-                                                href: "#cenik",
+                                                href: "/#cenik",
                                                 text: "Ceník"
                                             },
                                             {
-                                                href: "#kontakt",
+                                                href: "/#kontakt",
                                                 text: "Kontakt"
                                             }
                                         ].map((link, idx) => {
