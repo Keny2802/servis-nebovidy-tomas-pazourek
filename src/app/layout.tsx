@@ -36,8 +36,14 @@ const fontKanit = Kanit({
 });
 
 export const metadata: Metadata = {
-    title: "Servis Nebovidy - autoservis se zaměřením na Japonské vozy",
+    title: "Servis Nebovidy Japanese Cars - autoservis se zaměřením na Japonské vozy",
     description: "Servis Nebovidy se primárně zaměřuje na opravy a servis Japonských vozů.",
+    icons: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon"
+      }
+    ]
 };
 
 export default function RootLayout({
