@@ -11,6 +11,7 @@ import Flex from "./Flex";
 import Text from "./Text";
 import HeaderItem from "./HeaderItem";
 import HeaderLink from "./HeaderLink";
+import Hashless from "./Hashless";
 
 type props = {
     className?: string;
@@ -50,24 +51,24 @@ const MobileMenu = ({
                                     {
                                         [
                                             {
-                                                href: "/#uvod",
+                                                href: "#uvod",
                                                 text: "Úvod"
                                             },
                                             {
-                                                href: "/#cenik",
+                                                href: "#cenik",
                                                 text: "Ceník"
                                             },
                                             {
-                                                href: "/#kontakt",
+                                                href: "#kontakt",
                                                 text: "Kontakt"
                                             }
                                         ].map((link, idx) => {
                                             return (
                                                 <HeaderItem
-                                                key={idx}
-                                                className="">
+                                                key={idx}>
                                                     <HeaderLink
-                                                    href={link.href}>
+                                                    href={link.href}
+                                                    onClick={(e) => Hashless(e, link.href)}>
                                                         {link.text}
                                                     </HeaderLink>
                                                 </HeaderItem>

@@ -30,7 +30,7 @@ const Contact = ({
                         Váš zodpovězený dotaz je pro nás prioritou.
                     </Text>
                     <Wrapper className="flex justify-center items-center flex-col lg:flex-row gap-2 md:gap-2.5 lg:gap-4 mt-2 md:mt-4 lg:mt-6 w-full">
-                        <form
+                        {/* <form
                         className="p-2.5 md:p-3 lg:p-4 w-full md:w-[70vw] rounded-md bg-[#edecec] text-black">
                             <Text type="cardHeading">
                                 Vyplňte náš krátký formulář
@@ -87,7 +87,7 @@ const Contact = ({
                                     Odeslat formulář
                                 </Button>
                             </Wrapper>
-                        </form>
+                        </form> */}
                         <Wrapper className="flex flex-col gap-2 w-full md:w-[30vw]">
                             {/* <Img
                             width={400}
@@ -99,10 +99,10 @@ const Contact = ({
                             <Wrapper className="p-2.5 md:p-3 lg:p-4 bg-white text-black rounded-md">
                                 <Wrapper className="flex justify-center items-center flex-col gap-2 text-center">
                                     <Text type="cardHeading">
-                                        Nemusíte formuláře?
+                                        Pojďme do spolupracovat?
                                     </Text>
                                     <Text type="bodyText">
-                                        Žádný problém, kontaktujte nás pomocí kontaktních informací, které jsou uvedené níže.
+                                        Kontaktujte nás pomocí níže uvedených kontaktních informací.
                                     </Text>
                                 </Wrapper>
                                 <Wrapper className="mt-2 md:mt-3 lg:mt-4">

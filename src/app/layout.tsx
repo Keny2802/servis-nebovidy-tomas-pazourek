@@ -36,14 +36,43 @@ const fontKanit = Kanit({
 });
 
 export const metadata: Metadata = {
+    metadataBase: "https://www.servis-nebovidy.cz",
     title: "Servis Nebovidy Japanese Cars - autoservis se zaměřením na Japonské vozy",
     description: "Servis Nebovidy se primárně zaměřuje na opravy a servis Japonských vozů.",
+    keywords: [
+      "nebovidy",
+      "tomáš pazourek",
+      "servis nebovidy japanese cars",
+      "japenese cars",
+      "autoservis nebovidy",
+      "přezutí kol",
+      "výměna brzdové kapaliny",
+      "výměna brzdové a spojkové kapaliny",
+      "chladící kapalina g11",
+      "chladící kapalina g12",
+    ],
     icons: [
       {
-        url: "/favicon.ico",
-        type: "image/x-icon"
+        url: "/logo.avif",
+        type: "image/avif"
       }
-    ]
+    ],
+    openGraph: {
+        title: "Servis Nebovidy Japanese Cars - autoservis se zaměřením na Japonské vozy",
+        description: "Servis Nebovidy se primárně zaměřuje na opravy a servis Japonských vozů.",
+        images: [
+            {
+                width: 630,
+                height: 1200,
+                url: "/hero.avif",
+                type: "image/avif"
+            }
+        ]
+    },
+    robots: {
+      index: true,
+      follow: true,
+    }
 };
 
 export default function RootLayout({

@@ -64,15 +64,15 @@ const Footer = ({
                         {
                             [
                                 {
-                                    href: "/obchodni-podminky",
+                                    href: "/povinne/obchodni-podminky",
                                     text: "Obchodní podmínky"
                                 },
                                 {
-                                    href: "/ochrana-osobnich-udaju",
+                                    href: "/povinne/ochrana-osobnich-udaju",
                                     text: "Ochrana osobních údajů"
                                 },
                                 {
-                                    href: "/nastaveni-cookies",
+                                    href: "/povinne/nastaveni-cookies",
                                     text: "Nastavení cookies"
                                 }
                             ].map((link, idx) => {

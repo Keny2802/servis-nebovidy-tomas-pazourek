@@ -6,7 +6,7 @@ import type {
 } from "next";
 
 import Content from "./Content";
-import PricingPageSet from "@/app/components/PricingPageSet";
+import obligatedPageSet from "@/app/sets/obligatedPagesSet";
 
 type Props = {
     params: Promise<{ pathName: string }>;
@@ -15,10 +15,10 @@ type Props = {
 export const generateMetadata = async ({ params } : Props) : Promise<Metadata> => {
     const pathName = ( await params ).pathName;
 
-    const currentMetadata = PricingPageSet.find((page) => {
+    const currentMetadata = obligatedPageSet.find((page) => {
         const pagePathName = page.url;
 
-        return pagePathName === "/cenik/cisteni-a-kontrola-brzd";
+        return pagePathName === `/povinne/${pathName}`;
     });
 
     return {
