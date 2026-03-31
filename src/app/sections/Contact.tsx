@@ -99,7 +99,7 @@ const Contact = ({
                             <Wrapper className="p-2.5 md:p-3 lg:p-4 bg-white text-black rounded-md">
                                 <Wrapper className="flex justify-center items-center flex-col gap-2 text-center">
                                     <Text type="cardHeading">
-                                        Pojďme do spolupracovat?
+                                        Kontaktní informace
                                     </Text>
                                     <Text type="bodyText">
                                         Kontaktujte nás pomocí níže uvedených kontaktních informací.
@@ -129,7 +129,11 @@ const Contact = ({
                                                     <Link
                                                     key={idx}
                                                     href={link.href}>
-                                                        {link.text}
+                                                        <Text
+                                                        type="boldText"
+                                                        className="border-b-2">
+                                                            {link.text}
+                                                        </Text>
                                                     </Link>
                                                 );
                                             })
