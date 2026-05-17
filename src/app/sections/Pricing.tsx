@@ -44,7 +44,7 @@ const Pricing = ({
                                     alt: "Mechanické práce - Servis Nebovidy Tomáš Pazourek",
                                     heading: "Mechanické práce",
                                     subheading: "Neplatí při dodání vlastního materiálu.",
-                                    price: "661 Kč / hodinová sazba",
+                                    price: "790 Kč / hodinová sazba",
                                     vatText: "Uvedené ceny jsou bez DPH."
                                 },
                                 {
@@ -53,7 +53,7 @@ const Pricing = ({
                                     alt: "Elektroinstalační práce - Servis Nebovidy Tomáš Pazourek",
                                     heading: "Elektroinstalační práce",
                                     subheading: "Pro více informací u technika.",
-                                    price: "661 Kč / hodinová sazba",
+                                    price: "790 Kč / hodinová sazba",
                                     vatText: "Uvedené ceny jsou bez DPH."
                                 },
                                 {
